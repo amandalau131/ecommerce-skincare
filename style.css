@@ -23,31 +23,31 @@ h2 {
     font-size: 1.8rem;
     color: rgb(90, 90, 90);
     text-align: center;
-    margin: 3rem 1.5rem 1.5rem;
+    margin-top: 8%;
 }
 
 /* -----------------------HEADER ------------------------*/
 .nav-container {
     position: fixed;
     display: flex;
+    flex-wrap: nowrap;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem 1.5rem;
+    padding: 5%;
     background-color: white;
-    opacity: 100%;
     z-index: 1000;
     
 }
 
 .logo {
-    font-size: 2.25rem;
+    font-size: 1.6rem;
     font-family: "Julius Sans One", sans-serif;
     color: black;
 }
 
 .material-icons {
-    font-size: 1.75rem !important;
+    font-size: 1.35rem !important;
     color: black;
 }
 
@@ -63,8 +63,8 @@ h2 {
 
 .menu-icon span  {
     display: block;
-    width: 2rem;
-    height: 0.2rem;
+    width: 1.5rem;
+    height: 0.15rem;
     background-color: black;
     margin-bottom: 0.25rem;
     transition: .4s ease-in;
@@ -125,14 +125,14 @@ h2 {
 .hero-shop__title, .hero-about__title {
     font-weight: bold;
     font-size: 1.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 2%;
 }
 
 .hero-shop__btn, .hero-about__btn {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: bold;
-    padding: .5rem 1.25rem;
+    padding: .4rem 1.25rem;
     border-radius: 5px;
     transition: 0.2s ease-in;
 }
@@ -147,22 +147,22 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 2rem;
+    padding-right: 8%;
     align-items: flex-end;
     background: url(images/mg-group-bottles-generic-v2.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    margin-top: 4.8rem;
+    padding-bottom: 5%;
 }
 .hero-shop__title {
     color: black;
+    padding-top: 10%;
 }
 
 .hero-shop__btn {
     background-color: black;
     color: white;
-    margin-right: 0.7rem;
-    margin-bottom: 1rem;
+    margin-right: 3%;
 }
 
 /* -----------------------HERO: ABOUT------------------------*/
@@ -175,10 +175,9 @@ h2 {
     background: url(images/mg-woman-glowing-skin.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    margin-top: 1rem;
-    padding-left: 1.5rem;
-    padding-bottom: 1.5rem;
-    filter: brightness(90%);
+    margin-top: 5%;
+    padding-left: 8%;
+    padding-bottom: 8%;
 }
 
 .hero-about__title {
@@ -190,10 +189,6 @@ h2 {
     background-color: black;
     color: white;
 }
-
-
-
-
 
 /* -----------------------GRID SKIN TYPE------------------------*/
 
@@ -213,7 +208,7 @@ h2 {
     align-items: center;
     background-color: rgb(169, 197, 176);
     border-radius: 10px;
-    box-shadow: -3px 8px 10px -8px rgb(80, 80, 80),3px 8px 10px -8px rgb(80, 80, 80);
+    box-shadow: -3px 8px 10px -7px rgb(80, 80, 80),3px 8px 10px -7px rgb(80, 80, 80);
     font-size: 1.35rem;
     font-weight: bolder;
     color: white;
@@ -224,6 +219,7 @@ h2 {
     background-color: rgb(103, 134, 111);
 }
 
+
 /* -----------------------SLIDE BESTSELLER------------------------*/
 
   .slide-bestsellers__title {
@@ -233,7 +229,7 @@ h2 {
   ul.slides {
     position: relative;
     width: 100%;
-    height: 22rem;
+    height: 15rem;
     margin-bottom: 10%;
     list-style: none;
     overflow: hidden;
@@ -243,7 +239,7 @@ h2 {
   li.slide {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+    gap: 5%;
     margin: 0;
     padding: 0;
     width: inherit;
@@ -257,6 +253,10 @@ h2 {
     transition: .5s transform ease-in-out;
   }
 
+  .slide__product {
+    width: 35%;
+  }
+
   .slide__product p {
     text-align: center;
     font-weight: bold;
@@ -265,8 +265,8 @@ h2 {
   }
 
   .slide__product img {
-    width: auto;
-    height: 15rem;
+    width: 100%;
+    height: 10rem;
   }
   
   .slide:nth-of-type(1) {
@@ -290,14 +290,14 @@ h2 {
   .controls-visible {
     position: absolute;
     width: 100%;
-    bottom: 12px;
+    bottom: 1%;
     text-align: center;
   }
   
   .controls-visible label {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 0.5rem;
+    height: 0.5rem;
     background-color: white;
     border-radius: 50%;
     margin: 0 3px;
@@ -361,25 +361,28 @@ h2 {
 
 .footer-container{
     position: relative;
-    /* margin-top: 100%; */
     display: flex;
     flex-direction: column;
     background-color: #E5E5E5;
-    padding: 2rem 1.5rem 2.5rem; 
+    padding: 8% 5%; 
 }
 
 .footer-container p {
     font-size: 0.9rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 5%;
+}
+
+.mailform {
+  display: flex;
+  gap: 3%; 
 }
 
 .mailform input[type="email"], .mailform input[type="submit"] {
-    margin-bottom: 1rem;
-    margin-right: .5rem;
+    margin-bottom: 5%;
     width: 15rem;
     height: 2.5rem; 
-    padding: .5rem;
+    padding: 0.5rem;
 }
 
 .mailform input[type="submit"] {
@@ -404,12 +407,11 @@ h2 {
 
 .footer-list__link{
     color: black;
-    font-weight: lighter;
 }
 
 .footer-social__link {
+    margin-right: 2%;
     color: black;
-    padding-right: 1rem;
     font-size: 0.75rem;
 }
 
