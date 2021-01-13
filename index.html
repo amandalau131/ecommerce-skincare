@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css" type="text/css"> 
+    <title>Moon Glow</title>
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="menu-container">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="menu-list">
+                <li><a href="#" class="menu-list__link">Shop All</a></li>
+                <li><a href="#" class="menu-list__link">Cleansers</a></li>
+                <li><a href="#" class="menu-list__link">Toners</a></li>
+                <li><a href="#" class="menu-list__link">Moisturizers</a></li>
+                <li><a href="#" class="menu-list__link">Serums</a></li>
+                <li><a href="#" class="menu-list__link">Sunscreens</a></li>
+            </ul>
+        </div>
+        <!-- <div class="nav-desktop">    -->
+            <a href="#"><h1 class="logo">Moon Glow</h1></a>
+
+            <div class="nav-icons">
+                <a href="#" class="nav-icons__link"><i class="material-icons">person</i></a>
+                <a href="#" class="nav-icons__link"><i class="material-icons">shopping_cart</i></a>
+            </div>
+        <!-- </div>  -->
+    </nav>
+
+    <div class="searchbar">
+        <a class="searchbar__btn" href="#"><i class="material-icons">search</i></a>
+        <input class="searchbar__input" type="text" placeholder="Search entire store" aria-label="search">
+    </div>
+
+    <section class="hero-shop">
+        <h3 class="hero-shop__title">Get your glow</h3>
+        <a href="#" class="hero-shop__btn">shop now</a>
+    </section>
+
+    <section class="hero-about">
+        <h3 class="hero-about__title">Skincare line for your best glow</h3>
+        <a href="#" class="hero-about__btn">learn more</a>
+    </section>
+
+    <section class="grid-shop">
+        <h2 class="grid-shop__title">Shop By Skin Type</h2>
+        <div class="grid-shop-containter">
+            <a href="#" class="grid-shop__btn">Combination</a>
+            <a href="#" class="grid-shop__btn">Dry</a>
+            <a href="#" class="grid-shop__btn">Oily</a>
+            <a href="#" class="grid-shop__btn">Sensitive</a>
+        </div>
+    </section>
+        
+    <section class="slide-bestsellers">
+        <h2 class="slide-bestsellers__title">Best Sellers</h2>
+        <ul class="slides">
+            <input type="radio" id="control-1" name="control" checked>
+            <input type="radio" id="control-2" name="control">
+            <input type="radio" id="control-3" name="control">
+        
+            <div class="navigator">
+                <label for="control-3"><i class="fa fa-chevron-left"></i></label>
+                <label for="control-2"><i class="fa fa-chevron-right"></i></label>
+            </div>
+            
+            <div class="navigator">
+                <label for="control-1"><i class="fa fa-chevron-left"></i></label>
+                <label for="control-3"><i class="fa fa-chevron-right"></i></label>
+            </div>
+            
+            <div class="navigator">
+                <label for="control-2"><i class="fa fa-chevron-left"></i></label>
+                <label for="control-1"><i class="fa fa-chevron-right"></i></label>
+            </div>
+            
+            <li class="slide slide-1">
+                <a href="#" class="slide__product"> 
+                    <img src="images/mg-bottle-generic-natural-min.jpg" alt="cream cleanser">
+                    <p>Cream Cleanser</p> 
+                </a>
+                <a href="#" class="slide__product">
+                    <img src="images/mg-bottle-dropper-rose-min.jpg" alt="glow serum">
+                    <p>Glow Serum</p>
+                </a>
+            </li>
+            <li class="slide slide-2">
+                <a href="#" class="slide__product"> 
+                    <img src="images/mg-generic-lotion-bottle-v2-min.jpg" alt="everything lotion">
+                    <p>Everything Lotion</p> 
+                </a>
+                <a href="#"  class="slide__product">
+                    <img src="images/mg-generic-sqeeze-bottle-min.jpg" alt="shield sunscreen">
+                    <p>Shield Sunscreen</p>
+                </a>
+            </li>
+            <li class="slide slide-3">
+                <a href="#" class="slide__product"> 
+                    <img src="images/mg-generic-oil-min.jpg" alt="moon oil">
+                    <p>Moon Oil</p> 
+                </a>
+                <a href="#"  class="slide__product">
+                    <img src="images/mg-generic-balm-min.jpg" alt="glow balm">
+                    <p>Glow Balm</p>
+                </a>
+            </li>
+            
+            <div class="controls-visible">
+            <label for="control-1"></label>
+            <label for="control-2"></label>
+            <label for="control-3"></label>
+            </div>
+        </ul>
+    </section>
+
+    <footer class="footer-container">
+        <p>Sign up for Moon Glow emails and receive 10% discount on your first order.</p>
+        <form class="mailform" action="" method="get">
+            <input type="email" id="mailform__email" placeholder="Enter your email address" aria-label="email" required>
+            <input type="submit" id="mailform__submit" value="subscribe">
+        </form>
+        <ul class="footer-list">
+            <li><a href="#" class="footer-list__link">About Us</a></li>
+            <li><a href="#" class="footer-list__link">Contact Us</a></li>
+            <li><a href="#" class="footer-list__link">Terms and Conditions</a></li>
+            <li><a href="#" class="footer-list__link">FAQs</a></li>
+            <li><a href="#" class="footer-list__link">Shipping Information</a></li>
+            <li><a href="#" class="footer-list__link">Returns and Exchanges</a></li>
+        </ul>
+        <div class="footer-social">
+            <a href="#" class="footer-social__link"><i class="fa fa-facebook-f fa-2x"></i></a>
+            <a href="#" class="footer-social__link"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="#" class="footer-social__link"><i class="fa fa-instagram fa-2x"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
